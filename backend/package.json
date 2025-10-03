@@ -1,0 +1,36 @@
+{
+  "name": "encrypt-evaluation-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf artifacts cache deployments types",
+    "compile": "hardhat compile",
+    "deploy:localhost": "hardhat --network localhost deploy",
+    "deploy:sepolia": "hardhat --network sepolia deploy",
+    "test": "hardhat test",
+    "typechain": "hardhat typechain"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-verify": "^2.0.8",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/node": "^20.11.30",
+    "chai": "^4.3.10",
+    "ethers": "^6.12.2",
+    "hardhat": "^2.22.8",
+    "hardhat-gas-reporter": "^1.0.10",
+    "rimraf": "^5.0.5",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fhevm/hardhat-plugin": "^0.1.0",
+    "@fhevm/solidity": "^0.8.0",
+    "hardhat-deploy": "^0.12.4"
+  }
+}
+
+
